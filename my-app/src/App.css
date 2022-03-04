@@ -37,22 +37,30 @@
   }
 }
 
-.Title{
+.title{
   text-align: center;
   font-size: 30px!important;
 }
 
-.NavigationBar{
+.navigationBar{
   text-align: right;
   background-color: #61dafb;
 }
 
-.Search{
+.search{
   text-align: right;
   background-color: lightgray;
   color : black
 }
 
-.Home{
+.home{
   text-align: center;
+}
+
+.btn {
+  font-size: 1.5rem!important;
+}
+
+.navbar-collapse.collapse.show {
+  position : absolute;
 }

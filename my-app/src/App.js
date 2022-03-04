@@ -16,8 +16,8 @@ class App extends Component {
         <Route path="/" element={<Home />} />
         <Route path="/basket" element={<Basket />} />
         <Route path="/catalog" element={<Catalog />} />
-        <Route path="/Command" element={<Command />} />
-        <Route path="/Article" element={<Article />} />
+        <Route path="/command" element={<Command />} />
+        <Route path="/article" element={<Article />} />
       </Routes>
     )
   }
