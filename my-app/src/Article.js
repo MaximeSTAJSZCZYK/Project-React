@@ -1,11 +1,10 @@
 import React from 'react'
+import Cardsarticles from './Components/Cardsarticles';
 
-function Test() {
+function Articles() {
     return (
-        <div>
-            <h1>This is an article</h1>
-        </div>
+        <Cardsarticles />
     )
 }
 
-export default Test;
+export default Articles;

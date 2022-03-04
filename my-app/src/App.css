@@ -36,3 +36,23 @@
     transform: rotate(360deg);
   }
 }
+
+.Title{
+  text-align: center;
+  font-size: 30px!important;
+}
+
+.NavigationBar{
+  text-align: right;
+  background-color: #61dafb;
+}
+
+.Search{
+  text-align: right;
+  background-color: lightgray;
+  color : black
+}
+
+.Home{
+  text-align: center;
+}

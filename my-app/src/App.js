@@ -6,7 +6,7 @@ import Basket from "./Basket";
 import Catalog from "./Catalog";
 import Command from "./Command";
 import Article from "./Article";
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 class App extends Component {
