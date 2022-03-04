@@ -1,16 +1,20 @@
 import React from 'react'
-import { Nav, Navbar, NavDropdown, Container } from 'react-bootstrap'
+import { BsFillPersonFill, BsFillBasket2Fill } from "react-icons/bs";
+import { AiOutlineSearch } from "react-icons/ai";
+import { ImHome } from "react-icons/im";
+import { Nav, Navbar, NavDropdown, Container, Button } from 'react-bootstrap'
 
 function Navigationbar() {
     return <Navbar bg="light" expand="lg">
                 <Container>
-                    <Navbar.Brand className='title'href="#home">Portaporte</Navbar.Brand>
-                    <div className='navigationbar'><Navbar.Toggle aria-controls="basic-navbar-nav" />
+                    <Button variant="light" href="basket"><ImHome /></Button>
+                    <Navbar.Brand className='Title'href="#home">Portaporte</Navbar.Brand>     
+                    <div className='NavigationBar'><Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
-                            <Nav.Link href="">Rechercher</Nav.Link>
-                            <Nav.Link href="Article">Profil</Nav.Link>
-                            <NavDropdown title="Panier" href="Basket" >Articles achetès</NavDropdown>
+                            <Button variant="light"><AiOutlineSearch /></Button>
+                            <Button variant="light" href=""><BsFillPersonFill /></Button>
+                            <Button variant="light" href="basket"><BsFillBasket2Fill /></Button>
                         </Nav>
                         *
                     </Navbar.Collapse>
