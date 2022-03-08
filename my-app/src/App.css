@@ -61,6 +61,6 @@
   font-size: 1.5rem!important;
 }
 
-.navbar-collapse.collapse.show {
-  position : absolute;
+@media (max-width: 768px) {
+  .navbar-collapse { position : absolute; }
 }

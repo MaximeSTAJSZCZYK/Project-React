@@ -1,20 +1,48 @@
-import React from 'react'
+import React, { Component } from 'react';
 import Cardsarticles from './Components/Cardsarticles';
 import Footer from './Components/Footer';
+import CarouselHome from './Components/CarouselHome';
 import Navigationbar from './Components/Navigationbar';
 import SearchIDE from './Components/SearchIDE';
+import { renderMatches } from 'react-router-dom';
+import { data } from 'jquery';
 
 
-function Home() {
+class Home extends Component {
+
+  constructor(props) {
+    super(props)
+    this.state = {
+      articles: [],
+      loading: true,
+    }
+  }
+
+  async componentDidMount() {
+    const response = await fetch('http://localhost:1337/api/articles?populate=*', {
+      method: 'GET',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      }
+    })
+    const articles = await response.json()
+    this.setState({ articles: articles, loading: false })
+  }
+
+  render() {
+    console.log(this.state.articles)
     return (
-        <div className="Home">
-            <Navigationbar />
-            <SearchIDE />
-            <h1>Hello world</h1>
-            <Cardsarticles />
-            <Footer />
-        </div>
+      <div className="Home">
+        <Navigationbar />
+        <CarouselHome />
+          {
+            this.state.articles.data &&
+            this.state.articles.data.map((articles, i) => { return <Cardsarticles articles={articles} />})
+          }
+      </div>
     )
+  }
 }
 
 export default Home;

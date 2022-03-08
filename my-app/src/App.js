@@ -10,6 +10,16 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 class App extends Component {
+
+  constructor(props) {
+    super(props)
+    this.state = {
+      carouselPictures: [],
+      loading: true,
+    }
+  }
+
+  
   render() {
     return (
       <Routes>
@@ -22,5 +32,4 @@ class App extends Component {
     )
   }
 }
-
 export default App;

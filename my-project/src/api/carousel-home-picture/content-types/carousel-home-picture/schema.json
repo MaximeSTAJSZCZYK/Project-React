@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "articles",
+  "collectionName": "carousel_home_pictures",
   "info": {
-    "singularName": "article",
-    "pluralName": "articles",
-    "displayName": "Articles",
+    "singularName": "carousel-home-picture",
+    "pluralName": "carousel-home-pictures",
+    "displayName": "CarouselHome Pictures",
     "description": ""
   },
   "options": {
@@ -12,9 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Name": {
-      "type": "string"
-    },
     "Picture": {
       "type": "media",
       "multiple": false,
@@ -26,14 +23,11 @@
         "audios"
       ]
     },
-    "Type": {
-      "type": "string"
+    "order": {
+      "type": "integer"
     },
-    "Shape": {
+    "Name": {
       "type": "string"
-    },
-    "Price": {
-      "type": "decimal"
     }
   }
 }

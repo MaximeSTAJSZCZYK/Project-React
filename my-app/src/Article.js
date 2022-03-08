@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import Cardsarticles from './Components/Cardsarticles';
 
 function Articles() {
