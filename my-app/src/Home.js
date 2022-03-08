@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Row, Col } from 'react-bootstrap';
 import Cardsarticles from './Components/Cardsarticles';
 import Footer from './Components/Footer';
 import CarouselHome from './Components/CarouselHome';
@@ -35,11 +36,19 @@ class Home extends Component {
     return (
       <div className="Home">
         <Navigationbar />
+        <SearchIDE />
         <CarouselHome />
-          {
-            this.state.articles.data &&
-            this.state.articles.data.map((articles, i) => { return <Cardsarticles articles={articles} />})
-          }
+        <div className='cardspace'>
+          <Row>
+            <Col>
+              {
+                this.state.articles.data &&
+                this.state.articles.data.map((articles, i) => { return <Cardsarticles articles={articles} /> })
+              }
+            </Col>
+          </Row>
+        </div>
+        <Footer />
       </div>
     )
   }
