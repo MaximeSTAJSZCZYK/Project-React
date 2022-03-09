@@ -81,18 +81,11 @@ img {
 .articles{
   color : black;
   background-color: white;
-  font-size: 20px;
-  padding-left: 5%;
+  font-size: 1rem;
 }
 
 .articlecard{
   border : 1px solid black;
-}
-
-.price{
-  margin-top : 2%;
-  padding-left: 25%;
-  font-size: 25px;
 }
 
 @media (max-width: 768px) {
@@ -107,7 +100,6 @@ img {
 .sidebar{
   background-color: lightgreen;
   border: 3px solid brown;
-  height : 50em;
   padding-top: 5px;
 }
 
@@ -127,8 +119,8 @@ img {
   padding-top: 30px;
 }
 
-.margin10{
-  margin-top: 10%;
+.margin30{
+  margin-top: 30px;
 }
 
 .catalog{
