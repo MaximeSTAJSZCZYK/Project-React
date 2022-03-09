@@ -16,20 +16,15 @@ function SearchIDE() {
       <Navbar>
         <Container>
           <Nav className="me-auto">
-            <NavDropdown className="spacing" title="Matériaux" id="basic-nav-dropdown">
-              <NavDropdown title="Bois" id="basic-nav-dropdown">
-                <NavDropdown.Item href="Article">Article(Category:Bois)</NavDropdown.Item>
-              </NavDropdown>
+            <NavDropdown className="spacing" title="Material" id="basic-nav-dropdown">
+              <NavDropdown.Item href="Wood">Wood</NavDropdown.Item>
             </NavDropdown>
-            <NavDropdown className="spacing" title="Couleurs" id="basic-nav-dropdown">
-              <NavDropdown title="Rouge" id="basic-nav-dropdown">
-                <NavDropdown.Item href="Article">Article(Category:Rouge)</NavDropdown.Item>
-              </NavDropdown>
+            <NavDropdown className="spacing" title="Type" id="basic-nav-dropdown">
+              <NavDropdown.Item href="Simple">Simple</NavDropdown.Item>
+              <NavDropdown.Item href="Double">Double</NavDropdown.Item>
             </NavDropdown>
-            <NavDropdown className="spacing" title="Formes" id="basic-nav-dropdown">
-              <NavDropdown title="Rectangulaire" id="basic-nav-dropdown">
-                <NavDropdown.Item href="Article">Article(Category:Rectangulaire)</NavDropdown.Item>
-              </NavDropdown>
+            <NavDropdown className="spacing" title="Shape" id="basic-nav-dropdown">
+              <NavDropdown.Item href="Angular">Angular</NavDropdown.Item>
             </NavDropdown>
           </Nav>
         </Container>

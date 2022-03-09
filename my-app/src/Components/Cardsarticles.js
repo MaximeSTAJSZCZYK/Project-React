@@ -4,7 +4,6 @@ import "./Articles.css";
 
 
 function Cardsarticles(props) {
-
   return (
 
     <Card style={{ width: '15rem' }}>
@@ -12,7 +11,7 @@ function Cardsarticles(props) {
       <Card.Body>
         <Card.Title>{props.articles.attributes.Name}</Card.Title>
         <Card.Text>
-          Description article
+          {props.articles.attributes.Price + '$'}
         </Card.Text>
       </Card.Body>
     </Card>

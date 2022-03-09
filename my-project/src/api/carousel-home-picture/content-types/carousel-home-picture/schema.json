@@ -23,9 +23,6 @@
         "audios"
       ]
     },
-    "order": {
-      "type": "integer"
-    },
     "Name": {
       "type": "string"
     }
