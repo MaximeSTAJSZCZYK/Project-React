@@ -3,11 +3,6 @@ import { Row, Col, Form } from 'react-bootstrap';
 import Cardsarticles from './Components/Cardsarticles';
 import Navigationbar from './Components/Navigationbar';
 
-import { Row, Col } from 'react-bootstrap';
-import Cardsarticles from './Components/Cardsarticles';
-import Navigationbar from './Components/Navigationbar';
-
-
 function Catalog(props) {
   console.log(props)
   return (
