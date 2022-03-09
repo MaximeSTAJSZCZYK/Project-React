@@ -9,7 +9,45 @@ function Catalog(props) {
     <div>
       <Navigationbar />
       <Row className='nomargin'>
-        <Col className='sidebar' xs={3} sm={2} xl={2} xll={2}>Sidebar</Col>
+        <Col className='sidebar' xs={3} sm={2} xl={2} xll={2}>
+          <div className='caraname'>Materials :</div>
+          <Form>
+            {['checkbox'].map((type) => (
+              <div key={`default-${type}`} className="mb-3">
+                <Form.Check
+                  type={type}
+                  id={`default-${type}`}
+                  label={`Bois`}
+                />
+              </div>
+            ))}
+          </Form>
+          <div className='caraname'>Type :</div>
+          <Form>
+            {['checkbox'].map((type) => (
+              <div key={`default-${type}`} className="mb-3">
+                <Form.Check
+                  type={type}
+                  id={`default-${type}`}
+                  label={`Bois`}
+                />
+              </div>
+            ))}
+          </Form>
+          <div className='caraname'>Shape :</div>
+          <Form>
+            {['checkbox'].map((type) => (
+              <div key={`default-${type}`} className="mb-3">
+                <Form.Check
+                  type={type}
+                  id={`default-${type}`}
+                  label={`Bois`}
+                />
+              </div>
+            ))}
+          </Form>
+          </Col>
+
         <Col xs={8} sm={10} xl={10} xll={10}>
           <Row className='space10 catalog'>
             {

@@ -101,8 +101,9 @@ img {
   background-color: lightgreen;
   border: 3px solid brown;
   padding-top: 5px;
+  height: 30rem;
   position : sticky;
-  top : 100px;
+  top : 0px;
 }
 
 .nomargin{
