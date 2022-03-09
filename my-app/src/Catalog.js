@@ -1,5 +1,5 @@
 import React from 'react'
-import { Row, Col, Form } from 'react-bootstrap';
+import { Row, Col, Form, FormControl } from 'react-bootstrap';
 import Cardsarticles from './Components/Cardsarticles';
 import Navigationbar from './Components/Navigationbar';
 
@@ -46,7 +46,16 @@ function Catalog(props) {
               </div>
             ))}
           </Form>
-          </Col>
+
+          <Form className="d-flex">
+            <FormControl
+              type="search"
+              placeholder="Search"
+              className="me-2"
+              aria-label="Search"
+            />
+          </Form>
+        </Col>
 
         <Col xs={8} sm={10} xl={10} xll={10}>
           <Row className='space10 catalog'>
