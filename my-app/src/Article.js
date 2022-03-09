@@ -1,8 +1,8 @@
 import React from 'react';
-import Cardsarticles from './Components/Cardsarticles';
+/*import Cardsarticles from './Components/Cardsarticles';*/
 import Navigationbar from './Components/Navigationbar';
 import SearchIDE from './Components/SearchIDE';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Button } from 'react-bootstrap';
 
 function Article() {
     return (
@@ -37,9 +37,9 @@ function Article() {
                                     </Row>
                                 </Col>
                             </Row>
-                            <Row>
+                            <Row className="space30" >
                                 <Col sm={8}></Col>
-                                <Col sm={3}>Button</Col>
+                                <Col sm={3}><Button href="#">Add to cart</Button></Col>
                                 <Col sm={1}></Col>
                             </Row>
                         </Container>

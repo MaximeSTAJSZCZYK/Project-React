@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Row, Col } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 import Cardsarticles from './Components/Cardsarticles';
 import Footer from './Components/Footer';
 import CarouselHome from './Components/CarouselHome';
@@ -23,17 +23,20 @@ class Home extends Component {
         <Navigationbar />
         <SearchIDE />
         <CarouselHome carousel={this.props.carousel} />
-        <div className='cardspace'>
-          <Row>
-            {
-              this.props.articles.data &&
-              this.props.articles.data.slice(0, 6).map((articles, i) =>
-                <Col xs={4} md={4} xl={4} xxl={4}>
-                  <Cardsarticles articles={articles} />
-                </Col>
-              )}
-          </Row>
-        </div>
+        <Row className='nomargin'>
+          <Col sm={1}></Col>
+          <Col xs={8} sm={10} xl={10} xll={10}>
+            <Row className='space10 catalog'>
+              {
+                this.props.articles.data &&
+                this.props.articles.data.slice(0, 6).map((articles, i) =>
+                  <Col xs={4} md={4} xl={4} xxl={4}>
+                    <Cardsarticles articles={articles} />
+                  </Col>
+                )}
+            </Row>
+          </Col>
+        </Row>
         <Footer />
       </div>
     )

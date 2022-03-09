@@ -1,11 +1,14 @@
 import React from 'react';
+import Navigationbar from './Components/Navigationbar';
+import SearchIDE from './Components/SearchIDE';
 
-function Test() {
+function Basket() {
     return (
         <div>
-            <h1>This is a basket</h1>
+            <Navigationbar />
+            <SearchIDE />
         </div>
     )
 }
 
-export default Test;
+export default Basket;
