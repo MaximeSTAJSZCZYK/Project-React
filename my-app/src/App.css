@@ -96,7 +96,6 @@ img {
   font-size: 25px;
 }
 
-<<<<<<< Updated upstream
 @media (max-width: 768px) {
   .navbar-collapse { position : absolute; }
 }
@@ -104,7 +103,13 @@ img {
 .caracteristics{
   padding-top: 1%;
   padding-left: 5%; 
-=======
+}
+
+.cardsize{
+  height: 2rem;
+  width: 2rem;
+}
+
 .sidebar{
   background-color: lightgreen;
   border: 3px solid brown;
@@ -130,5 +135,4 @@ img {
 
 .catalog{
   padding-left: 10px;
->>>>>>> Stashed changes
 }

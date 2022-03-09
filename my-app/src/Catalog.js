@@ -1,11 +1,7 @@
-<<<<<<< Updated upstream
-import React from 'react';
-=======
 import React from 'react'
 import {Container, Row, Col} from 'react-bootstrap';
 import Cardsarticles from './Components/Cardsarticles';
 import Navigationbar from './Components/Navigationbar';
->>>>>>> Stashed changes
 
 
 function Catalog() {
