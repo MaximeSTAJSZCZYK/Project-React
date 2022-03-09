@@ -24,13 +24,12 @@ class Home extends Component {
         <SearchIDE />
         <CarouselHome carousel={this.props.carousel} />
         <Row className='nomargin'>
-          <Col sm={1}></Col>
-          <Col xs={8} sm={10} xl={10} xll={10}>
+          <Col xs={{ span: 11, offset: 1 }} sm={10} xl={10} xll={10}>
             <Row className='space10 catalog'>
               {
                 this.props.articles.data &&
                 this.props.articles.data.slice(0, 6).map((articles, i) =>
-                  <Col xs={4} md={4} xl={4} xxl={4}>
+                  <Col xs={11} md={4} xl={4} xxl={4}>
                     <Cardsarticles articles={articles} />
                   </Col>
                 )}

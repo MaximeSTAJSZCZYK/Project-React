@@ -101,6 +101,8 @@ img {
   background-color: lightgreen;
   border: 3px solid brown;
   padding-top: 5px;
+  position : sticky;
+  top : 100px;
 }
 
 .nomargin{
@@ -129,4 +131,15 @@ img {
 
 .card-img, .card-img-top {
   height: 20rem;
+  padding-bottom: 0.5rem;
+}
+
+.separation{
+  border-top: 1px solid grey;
+  padding-top: 0.5rem;
+}
+
+.caraname{
+  color : brown;
+  font-size: 2rem;
 }
