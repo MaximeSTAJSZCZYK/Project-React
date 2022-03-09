@@ -18,7 +18,7 @@ class App extends Component {
   }
 
   async componentDidMount() {
-    const responseArticle = await fetch('http://localhost:1337/api/articles?populate=*', {
+    const responseArticle = await fetch('http://localhost:1337/api/articles?populate=*&pagination[0]=1&pagination[limit]=-1', {
       method: 'GET',
       headers: {
         'Accept': 'application/json',
@@ -28,7 +28,7 @@ class App extends Component {
     const articles = await responseArticle.json()
     this.setState({ articles: articles })
 
-    const responseCarousel = await fetch('http://localhost:1337/api/carousel-home-pictures?populate=*', {
+    const responseCarousel = await fetch('http://localhost:1337/api/carousel-home-pictures?populate=*&pagination[0]=1&pagination[limit]=-1', {
       method: 'GET',
       headers: {
         'Accept': 'application/json',

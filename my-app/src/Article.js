@@ -16,7 +16,6 @@ function Article() {
                         <Container className='nomargin space30'>
                             <Row>
                                 <Col sm={5}>
-                                    <Cardsarticles />
                                 </Col>
                                 <Col sm={7}>
                                     <Row className='space10'>
@@ -37,7 +36,7 @@ function Article() {
                                     </Row>
                                 </Col>
                             </Row>
-                            <Row>
+                            <Row className='space30'>
                                 <Col sm={8}></Col>
                                 <Col sm={3}>Button</Col>
                                 <Col sm={1}></Col>

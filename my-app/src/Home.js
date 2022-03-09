@@ -23,7 +23,7 @@ class Home extends Component {
         <Navigationbar />
         <SearchIDE />
         <CarouselHome carousel={this.props.carousel} />
-        <div className='cardspace'>
+        <div className='cardspace cardsize'>
           <Row>
             {
               this.props.articles.data &&

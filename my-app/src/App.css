@@ -58,9 +58,8 @@
 }
 
 .cardspace{
-  padding-top : 5%;
-  padding-left: 20%;
-  padding-right: 20%;
+  padding-left: 15%;
+  padding-right: 15%;
   display : flex;
   flex-direction : row;
   justify-content : space-between;
@@ -105,11 +104,6 @@ img {
   padding-left: 5%; 
 }
 
-.cardsize{
-  height: 2rem;
-  width: 2rem;
-}
-
 .sidebar{
   background-color: lightgreen;
   border: 3px solid brown;
@@ -133,6 +127,14 @@ img {
   padding-top: 30px;
 }
 
+.margin10{
+  margin-top: 10%;
+}
+
 .catalog{
   padding-left: 10px;
+}
+
+.card-img, .card-img-top {
+  height: 20rem;
 }
