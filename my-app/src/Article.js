@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Cardsarticles from './Components/Cardsarticles';
 import Navigationbar from './Components/Navigationbar';
 import SearchIDE from './Components/SearchIDE';
@@ -16,7 +16,7 @@ function Article() {
                         <Container className='nomargin space30'>
                             <Row>
                                 <Col sm={5}>
-                                    <Cardsarticles />
+                                    {/* <Cardsarticles /> */}
                                 </Col>
                                 <Col sm={7}>
                                     <Row className='space10'>
