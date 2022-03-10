@@ -144,3 +144,7 @@ img {
   color : brown;
   font-size: 2rem;
 }
+
+a {
+  color: black!important;
+}
