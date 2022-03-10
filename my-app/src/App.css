@@ -49,7 +49,8 @@
 
 .search{
   color : rgb(95, 2, 2)!important;
-  background-color: lightgreen;
+  background : linear-gradient(to bottom, white, lightgreen 90%);
+  border-bottom: 1px solid brown;
 }
 
 .spacing{
@@ -122,6 +123,10 @@ img {
   padding-top: 30px;
 }
 
+.margin10{
+  margin-top: 10px;
+}
+
 .margin30{
   margin-top: 30px;
 }
@@ -143,6 +148,14 @@ img {
 .caraname{
   color : brown;
   font-size: 2rem;
+}
+
+.carou{
+  color : black!important;
+}
+
+.foot{
+  height:20rem;
 }
 
 a {

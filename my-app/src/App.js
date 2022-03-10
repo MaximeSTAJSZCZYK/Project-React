@@ -44,7 +44,7 @@ class App extends Component {
     return (
       <Routes>
         <Route path="/" element={<Home articles={this.state.articles} carousel={this.state.carousel} />} />
-        <Route path="/basket" element={<Basket />} />
+        <Route path="/basket" element={<Basket articles={this.state.articles} />} />
         <Route path="/catalog" element={<Catalog articles={this.state.articles} />} />
         <Route path="/article" element={<Article />} />
       </Routes>

@@ -38,6 +38,15 @@ class Catalog extends Component {
                   />
                 </div>
               ))}
+              {['checkbox'].map((type) => (
+                <div key={`default-${type}`} className="mb-3">
+                  <Form.Check
+                    type={type}
+                    id={`default-${type}`}
+                    label={`Metal`}
+                  />
+                </div>
+              ))}
             </Form>
             <div className='caraname'>Type :</div>
             <Form>
@@ -46,7 +55,16 @@ class Catalog extends Component {
                   <Form.Check
                     type={type}
                     id={`default-${type}`}
-                    label={`Bois`}
+                    label={`Simple`}
+                  />
+                </div>
+              ))}
+              {['checkbox'].map((type) => (
+                <div key={`default-${type}`} className="mb-3">
+                  <Form.Check
+                    type={type}
+                    id={`default-${type}`}
+                    label={`Double`}
                   />
                 </div>
               ))}
@@ -58,7 +76,7 @@ class Catalog extends Component {
                   <Form.Check
                     type={type}
                     id={`default-${type}`}
-                    label={`Bois`}
+                    label={`Angular`}
                   />
                 </div>
               ))}
