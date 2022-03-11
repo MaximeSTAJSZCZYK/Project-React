@@ -49,8 +49,7 @@
 
 .search{
   color : rgb(95, 2, 2)!important;
-  background : linear-gradient(to bottom, white, lightgreen 90%);
-  border-bottom: 1px solid brown;
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(144,238,144,1) 50%, rgba(255,255,255,1) 100%);
 }
 
 .spacing{
@@ -71,7 +70,8 @@
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: rgb(95, 2, 2)!important;
+  color: rgb(0, 0, 0)!important;
+  text-shadow: brown 1px 1px 1px;
 }
 
 img {
@@ -153,16 +153,12 @@ img {
 
 .carou{
   color : black!important;
+  text-shadow: white 3px 1px 1px;
 }
 
-.caroupos{
-  height: 50%;
-  width: 50%;
-}
-
-.carousize{
-  height: 50%;
-  width: 50%;
+.caroustyle{
+  background: rgb(255,255,255);
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(144,238,144,1) 50%, rgba(255,255,255,1) 100%);
 }
 
 .foot{
@@ -180,4 +176,13 @@ a {
 .btn-primary {
   background-color: lightgreen!important;
   border-color: brown!important;
+}
+
+.deco{
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(144,238,144,1) 50%, rgba(255,255,255,1) 100%);
+  text-shadow: brown 1px 1px 1px;
+}
+
+.foont{
+  font-size : 2rem;
 }
