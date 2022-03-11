@@ -38,8 +38,7 @@ class Article extends Component {
                 <Navigationbar />
                 <SearchIDE />
                 <Row>
-                    <Col sm={1}></Col>
-                    <Col className='space30' sm={10}>
+                    <Col className='space30' sm={{ span: 10, offset: 1 }}>
                         <div className="articles articlecard">
                             <Container className='nomargin space30'>
                                 <Row>
@@ -73,10 +72,8 @@ class Article extends Component {
                                         </Row>
                                     </Col>
                                 </Row>
-                                <Row className="space30" >
-                                    <Col sm={8}></Col>
-                                    <Col sm={3}><Button href="#">Add to cart</Button></Col>
-                                    <Col sm={1}></Col>
+                                <Row className="space10" >
+                                    <Col sm={{ span: 3, offset: 8 }}><Button href="#">Add to cart</Button></Col>
                                 </Row>
                             </Container>
                         </div>

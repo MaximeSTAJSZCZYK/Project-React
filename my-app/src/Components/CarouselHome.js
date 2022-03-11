@@ -1,9 +1,10 @@
-import { Carousel } from 'react-bootstrap';
+import { Carousel, Row, Col} from 'react-bootstrap';
 
 function CarouselHome(props) {
   console.log(props)
   return (
     <Carousel>
+      {/*<Col sm={{ span: 6, offset: 4 }}>*/}
           <Carousel.Item>
             <img
               className="d-block w-100 h-100"
@@ -39,6 +40,7 @@ function CarouselHome(props) {
               <p>Tout pour combler l'envie de nos clients</p>
             </Carousel.Caption>
           </Carousel.Item>
+          {/*</Col>*/}
     </Carousel>
   )
 }

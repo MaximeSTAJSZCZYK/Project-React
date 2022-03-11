@@ -86,7 +86,8 @@ img {
 }
 
 .articlecard{
-  border : 1px solid black;
+  border : 1px solid brown;
+  border-radius: 10%;
 }
 
 @media (max-width: 768px) {
@@ -116,19 +117,19 @@ img {
 }
 
 .space10{
-  padding-top: 10px;
+  padding-top: 10px!important;
 }
 
 .space30{
-  padding-top: 30px;
+  padding-top: 30px!important;
 }
 
 .margin10{
-  margin-top: 10px;
+  margin-top: 10px!important;
 }
 
 .margin30{
-  margin-top: 30px;
+  margin-top: 30px!important;
 }
 
 .catalog{
@@ -154,10 +155,29 @@ img {
   color : black!important;
 }
 
+.caroupos{
+  height: 50%;
+  width: 50%;
+}
+
+.carousize{
+  height: 50%;
+  width: 50%;
+}
+
 .foot{
   height:20rem;
 }
 
 a {
   color: black!important;
+}
+
+.baskets{
+  border: 2px solid brown;
+}
+
+.btn-primary {
+  background-color: lightgreen!important;
+  border-color: brown!important;
 }
