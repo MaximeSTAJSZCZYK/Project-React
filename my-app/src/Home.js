@@ -22,7 +22,11 @@ class Home extends Component {
       <div className="Home">
         <Navigationbar />
         <SearchIDE />
+        <Row className='caroustyle'>
+          <Col className='margin30' sm={{span: 8, offset: 2 }}>
         <CarouselHome carousel={this.props.carousel} />
+        </Col>
+        </Row>
         <Row className='nomargin'>
           <Col xs={{ span: 11, offset: 1 }} sm={10} xl={10} xll={10}>
             <Row className='space10 catalog'>

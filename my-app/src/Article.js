@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-/*import Cardsarticles from './Components/Cardsarticles';*/
 import { Card } from 'react-bootstrap';
 import Navigationbar from './Components/Navigationbar';
 import SearchIDE from './Components/SearchIDE';
 import { Container, Row, Col, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 class Article extends Component {
 
@@ -73,7 +73,12 @@ class Article extends Component {
                                     </Col>
                                 </Row>
                                 <Row className="space10" >
-                                    <Col sm={{ span: 3, offset: 8 }}><Button href="#">Add to cart</Button></Col>
+                                    <Col sm={{ span: 3, offset: 8 }}>
+                                        <Button
+                                            onClick={() => this.props.updateBasket(this.state.articles, null, true)}>
+                                            <Link style={{ textDecoration: 'none' }} to={"/basket"}>Add article</Link>
+                                        </Button>
+                                    </Col>
                                 </Row>
                             </Container>
                         </div>
